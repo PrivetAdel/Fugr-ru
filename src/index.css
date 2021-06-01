@@ -11,3 +11,159 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-container {
+  padding: 10px 20px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:disabled {
+  background-color: darkgrey;
+  pointer-events: none;
+}
+
+.button:hover {
+  background-color: #3e6ec5;
+}
+
+.search__form {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.search__button{
+  border-radius: 0 3px 3px 0;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 9px 15px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid darkgrey;
+}
+
+.search__input {
+  margin: 5px 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.form__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 85%;
+}
+
+.form-label {
+  font-weight: bold;
+  min-width: 310px;
+  max-width: 45%;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.form__error-message {
+  font-size: 14px;
+  text-align: right;
+  margin: 0 5px 10px;
+  color: red;
+}
+
+.table {
+  width: 100%;
+  margin-top: 10px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table th {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 1px solid darkgrey;
+}
+
+.table-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  margin: 0;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.asc::after {
+  content: '▲';
+  position: absolute;
+  right: 10px;
+}
+
+.desc::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+}
+
+.table-row:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.table-row + .active,
+.active {
+  background-color: cornflowerblue;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid darkgrey;
+  cursor: pointer;
+}
+
+.table-pagination__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.table-pagination__container span {
+  margin-right: 10px;
+}
+
+.table-pagination__button {
+  margin: 0 1px;
+  padding: 5px 10px;
+}
+
+.selected-item__container {
+  border-top: 1px solid darkgrey;
+}
+
+.error-message {
+  text-align: center;
+}
